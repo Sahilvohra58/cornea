@@ -1,0 +1,6 @@
+runtime: python39
+service: otherfiles
+
+entrypoint: gunicorn -b 0.0.0.0:8080 main:server
+
+#service_account: ptp-exp-processor@lt-dia-analytics-exp-ptp.iam.gserviceaccount.com
